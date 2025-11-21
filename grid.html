@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  display: grid;
+  gap: 10px;
+
+  
+
+  grid-template-areas:
+    "red1 red1 teal   teal   gold1 gold1"
+    "red1 red1 gold2 white  white red2"
+    "white2 white2 red3  red3   teal2 red2"
+    "white2 white2 red3  red3   teal2 red2";
+}
+
+.box { display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+.red1   { background:#EF4136; grid-area: red1; }
+.red2   { background:#EF4136; grid-area: red2; }
+.red3   { background:#EF4136; grid-area: red3; }
+
+.teal   { background:#25C6DA; grid-area: teal; }
+.teal2  { background:#25C6DA; grid-area: teal2; }
+
+.gold1  { background:#D7B46A; grid-area: gold1; }
+.gold2  { background:#D7B46A; grid-area: gold2; }
+
+.white  { background:#0eeb66; grid-area: white; }
+.white2 { background:#f19f1b; grid-area: white2; }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <div class="box red1">A</div>
+  <div class="box teal">B</div>
+  <div class="box gold1">C</div>
+
+  <div class="box gold2">D</div>
+  <div class="box white">E</div>
+  
+  <div class="box red2">F</div>
+  
+  <div class="box white2">G</div>
+  <div class="box red3">H</div>
+  <div class="box teal2">I</div>
+
+</div>
+</body>
+</html>
