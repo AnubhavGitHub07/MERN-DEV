@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.container{
+
+  
+  width:900px;
+  display:grid;
+  gap:10px;
+  
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 80px);
+
+  grid-template-areas:
+    "a a a a a a a a a a a a"
+    "b b b b b b c c c c c c"
+    "d d d d e e e e f f f f"
+    "g g g h h h i i i j j j"
+    "k k l l m m n n o o p p"
+    "q r s t u v w x y z aa ab";
+}
+
+.box{
+  background:#4E7EFF;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+  border: 2px solid black;
+}
+
+
+.a  { grid-area:a; }
+.b  { grid-area:b; }
+.c  { grid-area:c; }
+.d  { grid-area:d; }
+.e  { grid-area:e; }
+.f  { grid-area:f; }
+.g  { grid-area:g; }
+.h  { grid-area:h; }
+.i  { grid-area:i; }
+.j  { grid-area:j; }
+.k  { grid-area:k; }
+.l  { grid-area:l; }
+.m  { grid-area:m; }
+.n  { grid-area:n; }
+.o  { grid-area:o; }
+.p  { grid-area:p; }
+.q  { grid-area:q; }
+.r  { grid-area:r; }
+.s  { grid-area:s; }
+.t  { grid-area:t; }
+.u  { grid-area:u; }
+.v  { grid-area:v; }
+.w  { grid-area:w; }
+.x  { grid-area:x; }
+.y  { grid-area:y; }
+.z  { grid-area:z; }
+.aa { grid-area:aa; }
+.ab { grid-area:ab; }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="box a">12</div>
+
+  <div class="box b">6</div>
+  <div class="box c">6</div>
+
+  <div class="box d">4</div>
+  <div class="box e">4</div>
+  <div class="box f">4</div>
+
+  <div class="box g">3</div>
+  <div class="box h">3</div>
+  <div class="box i">3</div>
+  <div class="box j">3</div>
+
+  <div class="box k">2</div>
+  <div class="box l">2</div>
+  <div class="box m">2</div>
+  <div class="box n">2</div>
+  <div class="box o">2</div>
+
+  <div class="box p">1</div>
+  <div class="box q">1</div>
+  <div class="box r">1</div>
+  <div class="box s">1</div>
+  <div class="box t">1</div>
+  <div class="box u">1</div>
+  <div class="box v">1</div>
+  <div class="box w">1</div>
+  <div class="box x">1</div>
+  <div class="box y">1</div>
+  <div class="box z">1</div>
+  <div class="box aa">1</div>
+  <div class="box ab">1</div>
+
+</div>
+
+</body>
+</html>
