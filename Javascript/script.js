@@ -6,3 +6,8 @@ console.log(typeof(x));
 let y = 1.78;
 console.log(y);
 console.log(typeof(y));
+
+let salary = 1235;
+console.log(salary);
+
+let arr = [ 10,20,30];
