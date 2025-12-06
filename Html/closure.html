@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+
+    <div>
+        <input id="red" type="button" value="Red">
+        <input id="green" type="button" value="Green">
+    </div>
+
+    <script>
+        const red = (document.getElementById("red").onclick = handleClick("red"));
+        const green = (document.getElementById("green").onclick = handleClick("green"));
+
+
+        function handleClick(color){
+            return function(){
+                document.body.style.backgroundColor = color;
+            };
+        }
+        handleClick;
+    </script>
+    
+</body>
+</html>
