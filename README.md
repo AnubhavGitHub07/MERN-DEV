@@ -61,10 +61,10 @@ and <b>deployment configurations</b> for future projects.
 
 <h2>🧑‍💻 <u>Author</u></h2>
 <p>
-<b>Anubhav Dwivedi</b><br>
-💼 <b>MERN Stack Developer</b> | 🤖 <b>AI/ML Enthusiast</b> | ⚙️ <b>DSA Learner</b>
+<b> ⭐ Anubhav Dwivedi  ⭐</b><br>
+
+
 </p>
 
-<hr>
 
-<p align="center">⭐ Feel free to fork, learn, and contribute! ⭐</p>
+
