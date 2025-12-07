@@ -49,3 +49,33 @@ function test() {
 }
 
 test();
+
+//homework ( maggi recipe)
+
+
+function makeMaggi(stepsCompleted) {
+    console.log("Boiling water");
+
+    setTimeout(() => {
+        console.log("Adding Maggi and tastemaker");
+        
+        setTimeout(() => {
+            console.log("Cooking Maggi");
+            
+            setTimeout(() => {
+                console.log("Maggi is Ready! 🍜");
+
+                
+                stepsCompleted("Your Maggi is ready to eat!");
+            }, 1000);
+
+    } , 1000);
+
+    }, 1000);
+}
+
+
+
+makeMaggi(function(message) {
+    console.log("Callback says:", message);
+});
