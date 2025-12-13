@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grandparent{
+            width: 800px;
+            height: 800px;
+            display: flex;
+            background-color: red;
+        }
+
+        .parent{
+            width: 400px;
+            height: 400px;
+            display: flex;
+            background-color: green;
+        }
+
+        .child{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grandparent">
+        grandparent
+        <div class="parent">
+            parent
+            <div class="child">
+                child
+            </div>
+        </div>
+    </div>
+
+    <p class="data"> </p>
+    <script>
+        const grandparent = document.querySelector("click" , (e) => {
+            const para = document.querySelector(".data");
+            para.innerText = `${e.target.className} was clicked using mouse`;
+
+        })
+
+        
+    </script>
+    
+</body>
+</html>
